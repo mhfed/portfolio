@@ -24,6 +24,16 @@ export type PortfolioVersion = {
   title: { en: string; vi: string }
   description: { en: string; vi: string }
   highlights: string[]
+  /**
+   * Embedded snapshot served from this site, e.g. '/archive/v6/en.html'.
+   * Use '{locale}' for snapshots that have one HTML file per locale.
+   * Absent when no runnable snapshot could be exported for this version.
+   */
+  liveUrl?: string
+  /** Locales the snapshot actually has files for; others fall back to en. */
+  snapshotLocales?: string[]
+  /** Note about the snapshot (or why there is none), shown on the card. */
+  liveNote?: { en: string; vi: string }
 }
 
 const repo = 'https://github.com/mhfed/portfolio'
@@ -37,10 +47,11 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     link: `${repo}/commit/4833145`,
     title: { en: 'V1: The original', vi: 'V1: Bản khởi đầu' },
     description: {
-      en: 'Dark-mode portfolio generated from a chat prompt, then hardened with i18n, a GSAP typing hero, a blog section and PWA support.',
-      vi: 'Bản portfolio dark-mode khởi đầu từ prompt chat, sau đó bổ sung i18n, hero typing GSAP, mục blog và hỗ trợ PWA.',
+      en: 'Dark-mode portfolio generated from a chat prompt, then hardened with i18n, a GSAP typing hero, a blog section and PWA support. Note: this original commit still carries the template placeholder name ILLIA BUKATYCH, not Nguyen Minh Hieu yet, and it predates i18n, so it has a single homepage.',
+      vi: 'Bản portfolio dark-mode khởi đầu từ prompt chat, sau đó bổ sung i18n, hero typing GSAP, mục blog và hỗ trợ PWA. Lưu ý: commit gốc này vẫn mang tên mẫu ILLIA BUKATYCH, chưa phải tên Nguyen Minh Hieu, và nó ra đời trước i18n nên chỉ có một trang chủ duy nhất.',
     },
     highlights: ['Dark mode', 'next-intl', 'GSAP typing hero', 'Blog', 'PWA'],
+    liveUrl: '/archive/v1/en.html',
   },
   {
     id: 'v2',
@@ -54,6 +65,12 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Project chuyển sang database kèm dashboard admin, upload ảnh Cloudinary và trình soạn blog TipTap.',
     },
     highlights: ['Database projects', 'Admin dashboard', 'Cloudinary', 'TipTap blog'],
+    liveUrl: '/archive/v2/{locale}.html',
+    snapshotLocales: ['en', 'vi'],
+    liveNote: {
+      en: 'Snapshot note: the snapshot shows only the interface; the database query was replaced with the static project list, so project titles in the Vietnamese snapshot are English, as in that list.',
+      vi: 'Lưu ý snapshot: snapshot chỉ giữ giao diện, truy vấn database đã thay bằng danh sách project tĩnh nên tiêu đề project trong bản tiếng Việt vẫn là tiếng Anh, đúng như danh sách gốc.',
+    },
   },
   {
     id: 'v3',
@@ -67,6 +84,11 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Theme Luxury Gold (sáng) và Binance (tối), thêm tiếng Trung phồn thể (zh-TW), timeline kinh nghiệm dạng dọc và bộ chọn màu accent.',
     },
     highlights: ['Luxury Gold / Binance themes', 'zh-TW locale', 'Vertical timeline', 'Accent themes'],
+    liveUrl: '/archive/v3/{locale}.html',
+    liveNote: {
+      en: 'Snapshot note: interface only; the blog section was omitted (it needed Server Actions and a database), and experience items are reconstructed from a neighbouring version. The footer blog link has no snapshot page.',
+      vi: 'Lưu ý snapshot: chỉ giữ giao diện; mục blog đã lược bỏ vì cần Server Actions và database, mục kinh nghiệm được dựng lại từ bản lân cận, link blog ở footer không có trang snapshot tương ứng.',
+    },
   },
   {
     id: 'v4',
@@ -80,6 +102,11 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Gỡ blog, admin và database để chuyển sang file dữ liệu tĩnh. Component tổ chức lại theo kiến trúc atomic với layout sáng tạo chạy bằng GSAP.',
     },
     highlights: ['Static data', 'Atomic components', 'GSAP project preview', 'MacBook mockup'],
+    liveUrl: '/archive/v4/{locale}.html',
+    liveNote: {
+      en: 'Snapshot note: interface only; locale is taken from the page path instead of headers, so the snapshot renders statically.',
+      vi: 'Lưu ý snapshot: chỉ giữ giao diện; locale lấy từ đường dẫn trang thay vì headers để snapshot render tĩnh được.',
+    },
   },
   {
     id: 'v5',
@@ -93,6 +120,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Dựng lại toàn bộ thành trải nghiệm 3D Financial HUD với hạt particle, kèm tài liệu công thức Three.js và quy tắc hiệu năng.',
     },
     highlights: ['Three.js', 'Particle-led HUD', 'WebGL bundle split', 'Self-tuned DPR'],
+    liveUrl: '/archive/v5/{locale}.html',
   },
   {
     id: 'v6',
@@ -106,6 +134,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Nhánh redesign/portfolio-2026 merge qua 3 pull request, mang theo hero kinetic GSAP, theme mascot và kể chuyện bằng scroll.',
     },
     highlights: ['GSAP motion system', 'Kinetic hero', 'Mascot theme', 'Scroll storytelling'],
+    liveUrl: '/archive/v6/{locale}.html',
   },
   {
     id: 'v7',

@@ -21,6 +21,8 @@ type UiText = {
   mainHeading: string
   experimentHeading: string
   viewSource: string
+  viewLive: string
+  currentSite: string
   commitLabel: string
   branchLabel: string
   status: Record<PortfolioVersionStatus, string>
@@ -30,11 +32,13 @@ const UI: Record<string, UiText> = {
   en: {
     title: 'Version archive',
     subtitle: 'How this portfolio has changed, from the first commit to today.',
-    note: 'There are no official releases or tags in this repository, so this archive is reconstructed from git history. Every entry links to its commit or branch on GitHub.',
+    note: 'There are no official releases or tags in this repository, so this archive is reconstructed from git history. Every entry links to its commit or branch on GitHub. "View this version" opens the old portfolio interface itself, embedded on this site; where a snapshot needed interface-only patching (no database, no Server Actions), its card says so.',
     back: 'Back to home',
     mainHeading: 'Main versions',
     experimentHeading: 'Experiments that were never merged',
     viewSource: 'View on GitHub',
+    viewLive: 'View this version',
+    currentSite: 'This is the live site',
     commitLabel: 'Commit',
     branchLabel: 'Branch',
     status: {
@@ -46,11 +50,13 @@ const UI: Record<string, UiText> = {
   vi: {
     title: 'Lưu trữ các phiên bản',
     subtitle: 'Portfolio này đã thay đổi như thế nào, từ commit đầu tiên đến hôm nay.',
-    note: 'Repo này không có release hay tag chính thức, nên trang này được dựng lại từ lịch sử git. Mỗi mục đều có link tới commit hoặc nhánh tương ứng trên GitHub.',
+    note: 'Repo này không có release hay tag chính thức, nên trang này được dựng lại từ lịch sử git. Mỗi mục đều có link tới commit hoặc nhánh tương ứng trên GitHub. Nút "Xem bản cũ" mở đúng giao diện portfolio cũ đó, nhúng ngay trên site này; bản nào phải patch để chỉ giữ giao diện (không database, không Server Actions) thì thẻ của nó ghi rõ.',
     back: 'Về trang chủ',
     mainHeading: 'Các phiên bản chính',
     experimentHeading: 'Các bản thử nghiệm chưa từng merge',
     viewSource: 'Xem trên GitHub',
+    viewLive: 'Xem bản cũ',
+    currentSite: 'Đây chính là site đang live',
     commitLabel: 'Commit',
     branchLabel: 'Nhánh',
     status: {
@@ -62,11 +68,13 @@ const UI: Record<string, UiText> = {
   'zh-TW': {
     title: '版本檔案',
     subtitle: 'How this portfolio has changed, from the first commit to today.',
-    note: 'There are no official releases or tags in this repository, so this archive is reconstructed from git history. Every entry links to its commit or branch on GitHub.',
+    note: 'There are no official releases or tags in this repository, so this archive is reconstructed from git history. Every entry links to its commit or branch on GitHub. "View this version" opens the old portfolio interface itself, embedded on this site; where a snapshot needed interface-only patching (no database, no Server Actions), its card says so.',
     back: '返回首頁',
     mainHeading: '主要版本',
     experimentHeading: '未合併的實驗版本',
     viewSource: 'View on GitHub',
+    viewLive: 'View this version',
+    currentSite: 'This is the live site',
     commitLabel: 'Commit',
     branchLabel: 'Branch',
     status: {
@@ -112,6 +120,13 @@ function VersionCard({
     locale === 'vi' ? version.title.vi : version.title.en
   const description =
     locale === 'vi' ? version.description.vi : version.description.en
+  const snapshotLocale =
+    version.snapshotLocales && !version.snapshotLocales.includes(locale)
+      ? 'en'
+      : locale
+  const liveUrl = version.liveUrl?.replace('{locale}', snapshotLocale)
+  const liveNote =
+    locale === 'vi' ? version.liveNote?.vi : version.liveNote?.en
 
   return (
     <article className='rounded-2xl border border-black/10 bg-white/60 p-6 dark:border-white/10 dark:bg-white/5'>
@@ -136,6 +151,11 @@ function VersionCard({
           </li>
         ))}
       </ul>
+      {liveNote ? (
+        <p className='mt-4 rounded-xl border border-black/10 bg-black/[0.03] p-3 text-sm leading-relaxed dark:border-white/10 dark:bg-white/5'>
+          {liveNote}
+        </p>
+      ) : null}
       <div className='mt-5 flex flex-wrap items-center gap-4 text-sm'>
         <span className='font-mono'>
           {ui.commitLabel}: {version.commit}
@@ -144,6 +164,22 @@ function VersionCard({
           <span className='font-mono'>
             {ui.branchLabel}: {version.branch}
           </span>
+        ) : null}
+        {liveUrl ? (
+          <a
+            href={liveUrl}
+            className='rounded-full bg-black px-4 py-2 font-semibold text-white dark:bg-white dark:text-black'
+          >
+            {ui.viewLive} →
+          </a>
+        ) : null}
+        {version.status === 'current' ? (
+          <a
+            href={`/${locale}`}
+            className='font-semibold underline underline-offset-4'
+          >
+            {ui.currentSite} →
+          </a>
         ) : null}
         <a
           href={version.link}
