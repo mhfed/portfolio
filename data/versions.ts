@@ -32,6 +32,8 @@ export type PortfolioVersion = {
   liveUrl?: string
   /** Locales the snapshot actually has files for; others fall back to en. */
   snapshotLocales?: string[]
+  /** Homepage screenshot shown on the card, e.g. '/versions-screenshots/v6.png'. */
+  screenshot?: string
   /** Note about the snapshot (or why there is none), shown on the card. */
   liveNote?: { en: string; vi: string }
 }
@@ -52,6 +54,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['Dark mode', 'next-intl', 'GSAP typing hero', 'Blog', 'PWA'],
     liveUrl: '/archive/v1/en.html',
+    screenshot: '/versions-screenshots/v1.png',
   },
   {
     id: 'v2',
@@ -66,6 +69,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['Database projects', 'Admin dashboard', 'Cloudinary', 'TipTap blog'],
     liveUrl: '/archive/v2/{locale}.html',
+    screenshot: '/versions-screenshots/v2.png',
     snapshotLocales: ['en', 'vi'],
     liveNote: {
       en: 'Snapshot note: the snapshot shows only the interface; the database query was replaced with the static project list, so project titles in the Vietnamese snapshot are English, as in that list.',
@@ -85,6 +89,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['Luxury Gold / Binance themes', 'zh-TW locale', 'Vertical timeline', 'Accent themes'],
     liveUrl: '/archive/v3/{locale}.html',
+    screenshot: '/versions-screenshots/v3.png',
     liveNote: {
       en: 'Snapshot note: interface only; the blog section was omitted (it needed Server Actions and a database), and experience items are reconstructed from a neighbouring version. The footer blog link has no snapshot page.',
       vi: 'Lưu ý snapshot: chỉ giữ giao diện; mục blog đã lược bỏ vì cần Server Actions và database, mục kinh nghiệm được dựng lại từ bản lân cận, link blog ở footer không có trang snapshot tương ứng.',
@@ -103,6 +108,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['Static data', 'Atomic components', 'GSAP project preview', 'MacBook mockup'],
     liveUrl: '/archive/v4/{locale}.html',
+    screenshot: '/versions-screenshots/v4.png',
     liveNote: {
       en: 'Snapshot note: interface only; locale is taken from the page path instead of headers, so the snapshot renders statically.',
       vi: 'Lưu ý snapshot: chỉ giữ giao diện; locale lấy từ đường dẫn trang thay vì headers để snapshot render tĩnh được.',
@@ -121,6 +127,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['Three.js', 'Particle-led HUD', 'WebGL bundle split', 'Self-tuned DPR'],
     liveUrl: '/archive/v5/{locale}.html',
+    screenshot: '/versions-screenshots/v5.png',
   },
   {
     id: 'v6',
@@ -135,6 +142,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
     },
     highlights: ['GSAP motion system', 'Kinetic hero', 'Mascot theme', 'Scroll storytelling'],
     liveUrl: '/archive/v6/{locale}.html',
+    screenshot: '/versions-screenshots/v6.png',
   },
   {
     id: 'v7',
@@ -148,6 +156,7 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
       vi: 'Bản đang live: thẩm mỹ Kage với camera scroll 6 chặng, nhân vật Ronin 3D phong cách mực tàu, thẻ kính mờ và lưới editorial tối giản.',
     },
     highlights: ['Kage aesthetic', '3D Ronin', '6-stage scroll camera', 'Frosted-glass cards'],
+    screenshot: '/versions-screenshots/v7.png',
   },
 ]
 
