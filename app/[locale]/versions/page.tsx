@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 import { routing } from '@/i18n/routing'
@@ -127,6 +128,18 @@ function VersionCard({
   const liveUrl = version.liveUrl?.replace('{locale}', snapshotLocale)
   const liveNote =
     locale === 'vi' ? version.liveNote?.vi : version.liveNote?.en
+  const imageHref =
+    liveUrl ?? (version.status === 'current' ? `/${locale}` : undefined)
+  const image = version.screenshot ? (
+    <Image
+      src={version.screenshot}
+      alt={`${title} homepage screenshot`}
+      width={1280}
+      height={960}
+      loading='lazy'
+      className='aspect-[4/3] w-full rounded-xl border border-black/10 object-cover object-top dark:border-white/10'
+    />
+  ) : null
 
   return (
     <article className='rounded-2xl border border-black/10 bg-white/60 p-6 dark:border-white/10 dark:bg-white/5'>
@@ -139,6 +152,13 @@ function VersionCard({
         </span>
         <span className='text-sm opacity-70'>{version.period}</span>
       </div>
+      {image && imageHref ? (
+        <a href={imageHref} className='mt-4 block' aria-label={title}>
+          {image}
+        </a>
+      ) : image ? (
+        <div className='mt-4'>{image}</div>
+      ) : null}
       <h3 className='mt-4 text-2xl font-semibold'>{title}</h3>
       <p className='mt-2 leading-relaxed opacity-80'>{description}</p>
       <ul className='mt-4 flex flex-wrap gap-2'>
