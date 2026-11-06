@@ -76,3 +76,78 @@
     scroll-behavior: auto;
   }
 }
+
+/* Mascot guide: only opacity and transform animate. */
+.mascot-guide {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 320ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mascot-guide[data-visible='true'] {
+  opacity: 1;
+  transform: none;
+}
+
+.mascot-guide__bubble {
+  opacity: 0;
+  transform: translateY(8px) scale(0.96);
+  transform-origin: bottom right;
+  transition:
+    opacity 220ms ease-out,
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mascot-guide__bubble[data-open='true'] {
+  opacity: 1;
+  transform: none;
+}
+
+.mascot-guide__pose {
+  opacity: 0;
+  transform: scale(0.94);
+  transition:
+    opacity 180ms ease-out,
+    transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mascot-guide__pose[data-active='true'] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-guide,
+  .mascot-guide__bubble,
+  .mascot-guide__pose {
+    transition-duration: 1ms;
+  }
+}
+
+/* Hero mascot: hover trades the typing pose for a wave. */
+.hero-mascot__base,
+.hero-mascot__alt {
+  transition:
+    opacity 220ms ease-out,
+    transform 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-mascot__alt {
+  opacity: 0;
+  transform: translateY(6%) scale(0.96);
+  transform-origin: bottom center;
+}
+
+@media (hover: hover) {
+  .hero-mascot:hover .hero-mascot__base {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  .hero-mascot:hover .hero-mascot__alt {
+    opacity: 1;
+    transform: none;
+  }
+}

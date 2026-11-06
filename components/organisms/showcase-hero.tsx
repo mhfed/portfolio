@@ -66,16 +66,28 @@ export function ShowcaseHero({ heading, navigation, hero }: ShowcaseHeroProps) {
             activeTransition='transform 0.3s ease-out'
             inactiveTransition='transform 0.6s ease-in-out'
           >
-            <Image
-              src='/images/hero-mascot-programmer.png'
-              alt=''
-              width={900}
-              height={850}
-              priority
-              sizes='(min-width: 1024px) 520px, (min-width: 768px) 440px, (min-width: 640px) 360px, 280px'
-              className='block h-auto w-full select-none'
-              draggable={false}
-            />
+            {/* Hovering swaps the typing pose for a wave (CSS only, see globals.css). */}
+            <div className='hero-mascot relative'>
+              <Image
+                src='/images/hero-mascot-programmer.png'
+                alt=''
+                width={900}
+                height={850}
+                priority
+                sizes='(min-width: 1024px) 520px, (min-width: 768px) 440px, (min-width: 640px) 360px, 280px'
+                className='hero-mascot__base block h-auto w-full select-none'
+                draggable={false}
+              />
+              <Image
+                src='/images/mascot/poses/wave.png'
+                alt=''
+                width={1024}
+                height={1024}
+                sizes='(min-width: 1024px) 520px, (min-width: 768px) 440px, (min-width: 640px) 360px, 280px'
+                className='hero-mascot__alt absolute inset-x-0 bottom-0 h-auto w-full select-none'
+                draggable={false}
+              />
+            </div>
           </Magnet>
         </FadeIn>
       </div>

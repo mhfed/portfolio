@@ -1,3 +1,4 @@
+import { MascotGuide } from '@/components/organisms/mascot-guide'
 import { ShowcaseAbout } from '@/components/organisms/showcase-about'
 import { ShowcaseContact } from '@/components/organisms/showcase-contact'
 import { ShowcaseExperience } from '@/components/organisms/showcase-experience'
@@ -56,6 +57,7 @@ export function ShowcasePortfolio({ content }: ShowcasePortfolioProps) {
           languageLabel={navigation.language.label}
         />
       </main>
+      <MascotGuide story={content.story} />
     </>
   )
 }
