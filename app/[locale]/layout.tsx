@@ -1,12 +1,10 @@
 import type React from 'react'
 import type { Metadata } from 'next'
-import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { hasLocale } from 'next-intl'
 import { routing } from '@/i18n/routing'
 import { Analytics } from '@vercel/analytics/react'
-import { LenisProvider } from '@/components/providers/lenis-provider'
 import { WebMCPProvider } from '@/components/atoms/webmcp-provider'
 
 type Props = {
@@ -124,9 +122,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   // Enable static rendering
   setRequestLocale(locale)
 
-  // Get messages from server-side configuration
-  const messages = await getMessages({ locale })
-
   // Structured data (JSON-LD) for SEO
   const structuredData = {
     '@context': 'https://schema.org',
@@ -166,13 +161,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <NextIntlClientProvider messages={messages}>
-        <LenisProvider>
-          <WebMCPProvider />
-          {children}
-          <Analytics />
-        </LenisProvider>
-      </NextIntlClientProvider>
+      <WebMCPProvider />
+      {children}
+      {process.env.VERCEL ? <Analytics /> : null}
     </>
   )
 }

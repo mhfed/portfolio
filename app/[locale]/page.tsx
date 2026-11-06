@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { EditorialPortfolio } from '@/components/organisms/editorial-portfolio'
+import { ShowcasePortfolio } from '@/components/organisms/showcase-portfolio'
 import { normalizeProjects, type LocalizedProjectRecord } from '@/data/projects'
 import { STORY_BEAT_IDS } from '@/lib/storytelling'
 import type { ExperienceRecord } from '@/types/experience'
@@ -186,5 +186,5 @@ export default async function Home({ params }: Props) {
     },
   }
 
-  return <EditorialPortfolio content={content} />
+  return <ShowcasePortfolio content={content} />
 }
