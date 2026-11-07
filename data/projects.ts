@@ -25,6 +25,9 @@ export interface ProjectCaseStudy {
 }
 
 const resultById: Record<number, string> = {
+  8: 'NFL Flag Global Website • Multi-country Platform',
+  7: 'AI Lookback Microsite • 27.6% Image Generation Rate',
+  6: 'Cart & Checkout Redesign • Conversion-focused Flow',
   5: 'Creative Motion & 60fps Fluid Scroll',
   4: 'Talent & Media Platform • SSR Streaming',
   3: 'Real-time Trading & Financial CMS • SSE',
@@ -32,6 +35,9 @@ const resultById: Record<number, string> = {
 }
 
 const roleById: Record<number, string> = {
+  8: 'Frontend Developer / Full-site Build',
+  7: 'Frontend Developer / AI Microsite',
+  6: 'Frontend Developer / Checkout UI',
   5: 'Creative Frontend / GSAP Motion',
   4: 'Lead Frontend / SSR Architecture',
   3: 'Frontend Engineer / Real-time UI',
