@@ -125,10 +125,19 @@
     "noExperience": "Chưa có kinh nghiệm làm việc.",
     "list": [
       {
+        "id": 5,
+        "company": "H&L CONSULTING",
+        "position": "Website NFL Flag toàn cầu • Frontend Developer",
+        "period": "15/04/2026 - Hiện tại",
+        "location": "Hà Nội",
+        "description": "Phát triển toàn bộ website NFL Flag toàn cầu tại H&L Consulting, từ trang chủ đến trang quốc gia và chương trình, với bộ chọn quốc gia và trải nghiệm địa phương hóa cho nhiều khu vực.",
+        "skills": ["React", "TypeScript", "Vite", "Responsive UI"]
+      },
+      {
         "id": 4,
         "company": "COOLMATE",
         "position": "Headless Storefront Migration • Frontend Engineer",
-        "period": "04/2024 - Hiện tại",
+        "period": "04/2024 - 15/04/2026",
         "location": "Hà Nội",
         "description": "Kiến trúc Headless Storefront với Next.js App Router. Nâng PageSpeed từ 29 lên 94, tối ưu hóa CVR và thời gian tải trang dưới 1 giây.",
         "skills": ["Next.js App Router", "TypeScript", "Performance Tuning", "Core Web Vitals", "Tailwind CSS"]
@@ -213,6 +222,39 @@
     "viewProject": "XEM DỰ ÁN",
     "noProjects": "Chưa có dự án nào.",
     "list": [
+      {
+        "id": 8,
+        "title": "NFL Flag Global Website",
+        "year": "2026",
+        "description": "Nền tảng bóng bầu dục cờ toàn cầu cho giới trẻ",
+        "details": "Phát triển toàn bộ website NFL Flag toàn cầu, từ trang chủ đến trang quốc gia và chương trình\nXây dựng bộ chọn quốc gia và trải nghiệm địa phương hóa cho Úc, Brasil, Canada, Đức, Mexico và nhiều nước khác\nCác mục chương trình, sự kiện và tin tức cùng nội dung cơ bản, huấn luyện và FAQ về bóng bầu dục cờ",
+        "imageUrl": "/images/projects/nfl-flag-global.png",
+        "liveUrl": "https://global.nflflag.com/en",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
+        "id": 7,
+        "title": "Coolmate Lookback 2025",
+        "year": "2025",
+        "description": "Microsite tổng kết năm ứng dụng AI",
+        "details": "Phát triển trải nghiệm Lookback tương tác với trò chuyện CoolGPT, avatar chibi cá nhân hóa, quay số may mắn và danh hiệu theo hành vi mua sắm\n27,6% người dùng tạo ảnh cá nhân hóa, 65% trong số đó đặt làm avatar (553/840)\nNghiên cứu và xây dựng luồng dữ liệu AI biến hành vi mua sắm thật thành bản tổng kết cá nhân hóa",
+        "imageUrl": "/images/projects/coolmate-lookback-2025.png",
+        "liveUrl": null,
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "id": 6,
+        "title": "Coolmate Cart & Checkout",
+        "year": "2024",
+        "description": "Thiết kế lại Giỏ hàng và Thanh toán cho Coolmate",
+        "details": "Phát triển và nghiên cứu bản dựng lại giỏ hàng và thanh toán theo thiết kế mới của đội sản phẩm Coolmate (Ver.02)\nĐơn giản hóa hành trình mua hàng để giảm nhầm lẫn và tăng tỷ lệ chuyển đổi\nGiao diện thanh toán responsive trên nền tảng headless Next.js",
+        "imageUrl": "/images/projects/coolmate-cart-checkout.png",
+        "liveUrl": "https://coolmate.me",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
       {
         "id": 5,
         "title": "Duong Minhle Portfolio",

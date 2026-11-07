@@ -125,10 +125,19 @@
     "noExperience": "No work experience yet.",
     "list": [
       {
+        "id": 5,
+        "company": "H&L CONSULTING",
+        "position": "NFL Flag Global Website • Frontend Developer",
+        "period": "15/04/2026 - Present",
+        "location": "Ha Noi",
+        "description": "Developed the entire global NFL Flag website at H&L Consulting, from the homepage to country and program pages, with a country selector and localized experience across global regions.",
+        "skills": ["React", "TypeScript", "Vite", "Responsive UI"]
+      },
+      {
         "id": 4,
         "company": "COOLMATE",
         "position": "Headless Storefront Migration • Frontend Engineer",
-        "period": "04/2024 - Present",
+        "period": "04/2024 - 15/04/2026",
         "location": "Ha Noi",
         "description": "Architected Headless Storefront with Next.js App Router. Elevated PageSpeed from 29 to 94, improved conversion rate, and achieved sub-second loads.",
         "skills": ["Next.js App Router", "TypeScript", "Performance Tuning", "Core Web Vitals", "Tailwind CSS"]
@@ -213,6 +222,39 @@
     "viewProject": "VIEW PROJECT",
     "noProjects": "No projects available yet.",
     "list": [
+      {
+        "id": 8,
+        "title": "NFL Flag Global Website",
+        "year": "2026",
+        "description": "Global Youth Flag Football Platform",
+        "details": "Developed the entire global NFL Flag website, from the homepage to country and program pages\nBuilt the country selector and localized experience for Australia, Brasil, Canada, Germany, Mexico and more\nProgram, events and news sections with flag football fundamentals, coaching and FAQ content",
+        "imageUrl": "/images/projects/nfl-flag-global.png",
+        "liveUrl": "https://global.nflflag.com/en",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
+        "id": 7,
+        "title": "Coolmate Lookback 2025",
+        "year": "2025",
+        "description": "AI-powered Annual Recap Microsite",
+        "details": "Developed the interactive Lookback experience with CoolGPT chat, personalized chibi avatars, lucky draw and behavior-based titles\n27.6% of users generated a personalized image, and 65% of them set it as their avatar (553/840)\nResearched and built the AI data flow that turns real shopping behavior into personalized recaps",
+        "imageUrl": "/images/projects/coolmate-lookback-2025.png",
+        "liveUrl": null,
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "id": 6,
+        "title": "Coolmate Cart & Checkout",
+        "year": "2024",
+        "description": "E-commerce Cart & Checkout Redesign",
+        "details": "Developed and researched the cart and checkout rebuild from the Coolmate product team's redesign (Ver.02)\nSimplified the purchase journey to reduce confusion and lift conversion\nResponsive checkout UI on the headless Next.js storefront",
+        "imageUrl": "/images/projects/coolmate-cart-checkout.png",
+        "liveUrl": "https://coolmate.me",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
       {
         "id": 5,
         "title": "Duong Minhle Portfolio",

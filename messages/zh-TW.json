@@ -125,10 +125,19 @@
     "noExperience": "目前尚無工作經歷。",
     "list": [
       {
+        "id": 5,
+        "company": "H&L CONSULTING",
+        "position": "NFL Flag 全球網站 • Frontend Developer",
+        "period": "15/04/2026 - 至今",
+        "location": "河內",
+        "description": "在 H&L Consulting 開發整個 NFL Flag 全球網站，從首頁到各國與項目頁面，包含國家選擇器與多地區在地化體驗。",
+        "skills": ["React", "TypeScript", "Vite", "Responsive UI"]
+      },
+      {
         "id": 4,
         "company": "COOLMATE",
         "position": "Headless Storefront Migration • Frontend Engineer",
-        "period": "04/2024 - 至今",
+        "period": "04/2024 - 15/04/2026",
         "location": "河內",
         "description": "架構 Next.js App Router Headless Storefront。PageSpeed 由 29 提升至 94，達成次秒級頁面載入並提升轉換率。",
         "skills": ["Next.js App Router", "TypeScript", "Performance Tuning", "Core Web Vitals", "Tailwind CSS"]
@@ -213,6 +222,39 @@
     "viewProject": "查看專案",
     "noProjects": "目前尚無專案。",
     "list": [
+      {
+        "id": 8,
+        "title": "NFL Flag Global Website",
+        "year": "2026",
+        "description": "全球青少年腰旗橄欖球平台",
+        "details": "開發整個 NFL Flag 全球網站，從首頁到各國與項目頁面\n打造國家選擇器與在地化體驗，涵蓋澳洲、巴西、加拿大、德國、墨西哥等國家\n節目、活動與新聞版塊，包含腰旗橄欖球基礎、教練與常見問題內容",
+        "imageUrl": "/images/projects/nfl-flag-global.png",
+        "liveUrl": "https://global.nflflag.com/en",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
+        "id": 7,
+        "title": "Coolmate Lookback 2025",
+        "year": "2025",
+        "description": "AI 驅動的年度回顧微網站",
+        "details": "開發具備 CoolGPT 對話、個人化 Q 版頭像、幸運抽獎與行為稱號的互動式 Lookback 體驗\n27.6% 使用者生成了個人化圖片，其中 65% 將其設為頭像（553/840）\n研究並打造 AI 資料流程，將真實購物行為轉化為個人化回顧",
+        "imageUrl": "/images/projects/coolmate-lookback-2025.png",
+        "liveUrl": null,
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
+      {
+        "id": 6,
+        "title": "Coolmate Cart & Checkout",
+        "year": "2024",
+        "description": "Coolmate 購物車與結帳流程重新設計",
+        "details": "依據 Coolmate 產品團隊的新版設計（Ver.02），研究並開發購物車與結帳流程\n簡化購買流程，減少使用者困惑並提升轉換率\n為 Headless Next.js 商店打造響應式結帳介面",
+        "imageUrl": "/images/projects/coolmate-cart-checkout.png",
+        "liveUrl": "https://coolmate.me",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS"]
+      },
       {
         "id": 5,
         "title": "Duong Minhle Portfolio",
