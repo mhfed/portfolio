@@ -146,17 +146,35 @@ export const MAIN_VERSIONS: PortfolioVersion[] = [
   },
   {
     id: 'v7',
-    period: 'Sep 2026 - now',
+    period: 'Sep - Nov 2026',
     commit: 'abedf82',
-    status: 'current',
-    link: `${repo}/tree/main`,
-    title: { en: 'V7: Kage / Ronin (current)', vi: 'V7: Kage / Ronin (bản hiện tại)' },
+    status: 'superseded',
+    link: `${repo}/commit/abedf82`,
+    title: { en: 'V7: Kage / Ronin', vi: 'V7: Kage / Ronin' },
     description: {
-      en: 'The live version: Kage aesthetic with a 6-stage scroll camera, a 3D Ronin swordsman in ink-brush style, frosted-glass cards and a quiet editorial grid.',
-      vi: 'Bản đang live: thẩm mỹ Kage với camera scroll 6 chặng, nhân vật Ronin 3D phong cách mực tàu, thẻ kính mờ và lưới editorial tối giản.',
+      en: 'Kage aesthetic with a 6-stage scroll camera, a 3D Ronin swordsman in ink-brush style, frosted-glass cards and a quiet editorial grid. It was the live site until the V8 rebuild in November 2026.',
+      vi: 'Thẩm mỹ Kage với camera scroll 6 chặng, nhân vật Ronin 3D phong cách mực tàu, thẻ kính mờ và lưới editorial tối giản. Đây là bản đã live cho đến đợt rebuild V8 tháng 11/2026.',
     },
     highlights: ['Kage aesthetic', '3D Ronin', '6-stage scroll camera', 'Frosted-glass cards'],
     screenshot: '/versions-screenshots/v7.png',
+    liveNote: {
+      en: 'Snapshot note: no runnable snapshot for V7; the homepage screenshot and the commit link are the record of this version.',
+      vi: 'Lưu ý snapshot: V7 không có snapshot chạy được; ảnh trang chủ và link commit là hồ sơ của bản này.',
+    },
+  },
+  {
+    id: 'v8',
+    period: 'Nov 2026 - now',
+    commit: '6603bc3',
+    status: 'current',
+    link: `${repo}/tree/main`,
+    title: { en: 'V8: Single-page showcase and mascot guide', vi: 'V8: Single-page showcase và mascot guide' },
+    description: {
+      en: 'The live version: a full rebuild as a dark single-page showcase. The WebGL and GSAP Kage page is gone, replaced by a magnetic mascot hero, a scroll-driven project marquee, a character-reveal about block, numbered experience, sticky stacking project cards and a contact footer. A posed mascot guide follows the reader down the page, switching pose and story line per section.',
+      vi: 'Bản đang live: dựng lại toàn bộ thành single-page showcase nền tối. Trang Kage WebGL và GSAP đã gỡ, thay bằng hero mascot magnetic, marquee project chạy theo scroll, mục about reveal, experience đánh số, project cards xếp chồng và footer liên hệ. Mascot guide với 8 dáng theo người đọc suốt trang, đổi dáng và câu chuyện theo từng mục.',
+    },
+    highlights: ['Single-page showcase', 'Magnetic mascot hero', 'Mascot guide (8 poses)', 'Kanit font'],
+    screenshot: '/versions-screenshots/v8.png',
   },
 ]
 
