@@ -25,6 +25,7 @@ export interface ProjectCaseStudy {
 }
 
 const resultById: Record<number, string> = {
+  9: 'Driving Practice App • 11 Exercises in 3D',
   8: 'NFL Flag Global Website • Multi-country Platform',
   7: 'AI Lookback Microsite • 27.6% Image Generation Rate',
   6: 'Cart & Checkout Redesign • Conversion-focused Flow',
@@ -35,6 +36,7 @@ const resultById: Record<number, string> = {
 }
 
 const roleById: Record<number, string> = {
+  9: 'Frontend Developer / Full-site Build',
   8: 'Frontend Developer / Full-site Build',
   7: 'Frontend Developer / AI Microsite',
   6: 'Frontend Developer / Checkout UI',
