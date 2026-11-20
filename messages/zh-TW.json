@@ -223,6 +223,17 @@
     "noProjects": "目前尚無專案。",
     "list": [
       {
+        "id": 9,
+        "title": "Vô Lăng Lab",
+        "year": "2026",
+        "description": "線上駕駛練習 App • 3D 場地模擬",
+        "details": "打造線上駕駛練習 App，以 3D 場地模擬涵蓋全部 11 項 B 級場地考題\n三種模式：引導、練習與模擬考試，支援自排與手排車\n理論、道路駕駛與即時錯誤回饋，免費使用且無需帳號",
+        "imageUrl": "/images/projects/volang-lab.png",
+        "liveUrl": "https://volang.site",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript"]
+      },
+      {
         "id": 8,
         "title": "NFL Flag Global Website",
         "year": "2026",

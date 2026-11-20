@@ -223,6 +223,17 @@
     "noProjects": "No projects available yet.",
     "list": [
       {
+        "id": 9,
+        "title": "Vô Lăng Lab",
+        "year": "2026",
+        "description": "Online Driving Practice App • 3D Yard Simulation",
+        "details": "Built the online driving practice app with 3D yard simulation for all 11 class B exercises\nThree modes: guided, practice and mock test, for both automatic and manual cars\nTheory, road driving and instant error feedback, free with no account required",
+        "imageUrl": "/images/projects/volang-lab.png",
+        "liveUrl": "https://volang.site",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript"]
+      },
+      {
         "id": 8,
         "title": "NFL Flag Global Website",
         "year": "2026",

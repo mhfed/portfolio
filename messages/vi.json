@@ -223,6 +223,17 @@
     "noProjects": "Chưa có dự án nào.",
     "list": [
       {
+        "id": 9,
+        "title": "Vô Lăng Lab",
+        "year": "2026",
+        "description": "App luyện lái xe online • Mô phỏng sa hình 3D",
+        "details": "Xây dựng app luyện lái xe online với mô phỏng sa hình 3D cho đủ 11 bài hạng B\n3 chế độ: hướng dẫn, luyện tập và thi thử, cho cả xe số tự động và số sàn\nLý thuyết, đường trường và phản hồi lỗi ngay, miễn phí không cần tài khoản",
+        "imageUrl": "/images/projects/volang-lab.png",
+        "liveUrl": "https://volang.site",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript"]
+      },
+      {
         "id": 8,
         "title": "NFL Flag Global Website",
         "year": "2026",
