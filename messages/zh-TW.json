@@ -223,6 +223,17 @@
     "noProjects": "目前尚無專案。",
     "list": [
       {
+        "id": 10,
+        "title": "vn-law-check",
+        "year": "2026",
+        "description": "越南網站開源法律合規稽核工具",
+        "details": "打造開源稽核工具，讓 AI 程式助手依據現行越南法律檢查網站與 App\n涵蓋個人資料保護（91/2025）、電子商務、網路安全、廣告、AI 透明度等法規\n可安裝為 Claude Code 外掛或 Cursor、Copilot、Windsurf、Cline 與 Codex 的技能，並回傳依優先順序排列的報告",
+        "imageUrl": "/images/projects/vn-law-check.png",
+        "liveUrl": "https://mhfed.github.io/vn-law-check/",
+        "githubUrl": "https://github.com/mhfed/vn-law-check",
+        "techStack": ["Python", "Shell", "Markdown"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",

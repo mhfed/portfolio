@@ -25,6 +25,7 @@ export interface ProjectCaseStudy {
 }
 
 const resultById: Record<number, string> = {
+  10: 'Legal Audit Toolkit • Vietnamese Law for AI Agents',
   9: 'Driving Practice App • 11 Exercises in 3D',
   8: 'NFL Flag Global Website • Multi-country Platform',
   7: 'AI Lookback Microsite • 27.6% Image Generation Rate',
@@ -36,6 +37,7 @@ const resultById: Record<number, string> = {
 }
 
 const roleById: Record<number, string> = {
+  10: 'Creator / Open-source Tool',
   9: 'Frontend Developer / Full-site Build',
   8: 'Frontend Developer / Full-site Build',
   7: 'Frontend Developer / AI Microsite',
