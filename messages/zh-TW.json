@@ -234,6 +234,28 @@
         "techStack": ["Python", "Shell", "Markdown"]
       },
       {
+        "id": 11,
+        "title": "Gom",
+        "year": "2026",
+        "description": "Mac 與 Windows 一體化訊息桌面 App",
+        "details": "打造桌面 App，將 Zalo、Telegram、Messenger、Gmail、Instagram、Discord、Slack 與 Tinder 收進同一視窗\n同一平台可登入多個帳號，以命名分頁快速切換，也可加入自訂網站\n已發行 Mac Apple Silicon 與 Windows x64 版本，安裝程式見 GitHub Releases",
+        "imageUrl": "/images/projects/gom.png",
+        "liveUrl": "https://gom-df6.pages.dev/",
+        "githubUrl": "https://github.com/mhfed/gom",
+        "techStack": ["Electron", "TypeScript", "Node.js"]
+      },
+      {
+        "id": 12,
+        "title": "TikPlay",
+        "year": "2026",
+        "description": "TikTok 音樂播放器 • 貼上連結即可播放",
+        "details": "打造網頁音樂播放器，將 TikTok 連結轉為可播放音訊，具備快取與完整播放器\nNext.js 前端與 API，搭配 yt-dlp 與 ffmpeg 處理媒體，支援曲庫、播放清單與佇列\n部署於 Fly.io，音訊快取 7 天，並有管理工具處理版權回報",
+        "imageUrl": "/images/projects/tikplay.png",
+        "liveUrl": "https://craw-music.fly.dev/",
+        "githubUrl": "https://github.com/mhfed/tikplay",
+        "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",

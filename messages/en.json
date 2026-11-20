@@ -234,6 +234,28 @@
         "techStack": ["Python", "Shell", "Markdown"]
       },
       {
+        "id": 11,
+        "title": "Gom",
+        "year": "2026",
+        "description": "All-in-one Messaging Desktop App for Mac and Windows",
+        "details": "Built the desktop app that brings Zalo, Telegram, Messenger, Gmail, Instagram, Discord, Slack and Tinder into one window\nMultiple accounts per platform with named tabs and quick switching, plus custom websites\nShipped for Mac Apple Silicon and Windows x64 with installers on GitHub Releases",
+        "imageUrl": "/images/projects/gom.png",
+        "liveUrl": "https://gom-df6.pages.dev/",
+        "githubUrl": "https://github.com/mhfed/gom",
+        "techStack": ["Electron", "TypeScript", "Node.js"]
+      },
+      {
+        "id": 12,
+        "title": "TikPlay",
+        "year": "2026",
+        "description": "TikTok Music Player • Paste a Link, Play the Audio",
+        "details": "Built the web music player that turns a TikTok link into playable audio with caching and a full player\nNext.js frontend and API with yt-dlp and ffmpeg media processing, library, playlists and queue\nDeployed on Fly.io with a 7-day audio cache and admin tools for copyright reports",
+        "imageUrl": "/images/projects/tikplay.png",
+        "liveUrl": "https://craw-music.fly.dev/",
+        "githubUrl": "https://github.com/mhfed/tikplay",
+        "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",
