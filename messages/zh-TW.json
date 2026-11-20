@@ -256,6 +256,17 @@
         "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
       },
       {
+        "id": 13,
+        "title": "Cloud Valley Tả Van",
+        "year": "2026",
+        "description": "沙壩 Tả Van 民宿與健行 • 網站、訂房與 PMS",
+        "details": "為沙壩 Tả Van 的 Cloud Valley 民宿打造網站、訂房流程與物業管理系統\n以健行為主的首頁，含 5 條嚮導路線、4 間客房、雙語內容與 100 篇 SEO 部落格文章\n透過 WhatsApp 接收訂房需求，附 7 天天氣列、住客評價與每週資料匯出",
+        "imageUrl": "/images/projects/cloud-valley.png",
+        "liveUrl": "https://cloudvalleytavan.com/",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Supabase"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",

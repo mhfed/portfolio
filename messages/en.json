@@ -256,6 +256,17 @@
         "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
       },
       {
+        "id": 13,
+        "title": "Cloud Valley Tả Van",
+        "year": "2026",
+        "description": "Homestay & Trekking in Tả Van, Sa Pa • Website, Booking & PMS",
+        "details": "Built the website, booking flow and property management system for the Cloud Valley homestay in Tả Van, Sa Pa\nTrekking-first homepage with 5 guided routes, 4 rooms, bilingual content and a 100-post SEO blog\nLive booking requests via WhatsApp, 7-day weather strip, guest reviews and a weekly data export",
+        "imageUrl": "/images/projects/cloud-valley.png",
+        "liveUrl": "https://cloudvalleytavan.com/",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Supabase"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",
