@@ -256,6 +256,17 @@
         "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
       },
       {
+        "id": 13,
+        "title": "Cloud Valley Tả Van",
+        "year": "2026",
+        "description": "Homestay & trekking ở Tả Van, Sa Pa • Website, đặt phòng & PMS",
+        "details": "Xây dựng website, luồng đặt phòng và hệ thống quản lý cho homestay Cloud Valley ở Tả Van, Sa Pa\nTrang chủ hướng trekking với 5 tuyến có hướng dẫn viên, 4 phòng, nội dung song ngữ và blog SEO 100 bài\nNhận yêu cầu đặt phòng qua WhatsApp, dải thời tiết 7 ngày, đánh giá khách và xuất dữ liệu hàng tuần",
+        "imageUrl": "/images/projects/cloud-valley.png",
+        "liveUrl": "https://cloudvalleytavan.com/",
+        "githubUrl": null,
+        "techStack": ["Next.js", "React", "TypeScript", "Supabase"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",
