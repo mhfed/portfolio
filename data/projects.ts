@@ -25,6 +25,8 @@ export interface ProjectCaseStudy {
 }
 
 const resultById: Record<number, string> = {
+  11: 'Messaging Desktop App • 8 Platforms in One Window',
+  12: 'TikTok Music Player • Link to Audio with Cache',
   10: 'Legal Audit Toolkit • Vietnamese Law for AI Agents',
   9: 'Driving Practice App • 11 Exercises in 3D',
   8: 'NFL Flag Global Website • Multi-country Platform',
@@ -37,6 +39,8 @@ const resultById: Record<number, string> = {
 }
 
 const roleById: Record<number, string> = {
+  11: 'Creator / Desktop App',
+  12: 'Creator / Full-stack Web App',
   10: 'Creator / Open-source Tool',
   9: 'Frontend Developer / Full-site Build',
   8: 'Frontend Developer / Full-site Build',

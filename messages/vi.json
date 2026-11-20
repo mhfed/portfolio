@@ -234,6 +234,28 @@
         "techStack": ["Python", "Shell", "Markdown"]
       },
       {
+        "id": 11,
+        "title": "Gom",
+        "year": "2026",
+        "description": "App nhắn tin tất cả trong một cho Mac và Windows",
+        "details": "Xây dựng app desktop gom Zalo, Telegram, Messenger, Gmail, Instagram, Discord, Slack và Tinder vào một cửa sổ\nNhiều tài khoản cho cùng một nền tảng, đặt tên tab riêng và chuyển qua lại nhanh, thêm được website riêng\nPhát hành cho Mac Apple Silicon và Windows x64, bộ cài trên GitHub Releases",
+        "imageUrl": "/images/projects/gom.png",
+        "liveUrl": "https://gom-df6.pages.dev/",
+        "githubUrl": "https://github.com/mhfed/gom",
+        "techStack": ["Electron", "TypeScript", "Node.js"]
+      },
+      {
+        "id": 12,
+        "title": "TikPlay",
+        "year": "2026",
+        "description": "Trình phát nhạc TikTok • Dán link là nghe",
+        "details": "Xây dựng web nghe nhạc biến link TikTok thành audio phát được, có cache và trình phát đầy đủ\nFrontend và API Next.js, xử lý media bằng yt-dlp và ffmpeg, có thư viện, playlist và hàng chờ\nDeploy trên Fly.io, cache audio 7 ngày, có công cụ quản trị xử lý báo cáo bản quyền",
+        "imageUrl": "/images/projects/tikplay.png",
+        "liveUrl": "https://craw-music.fly.dev/",
+        "githubUrl": "https://github.com/mhfed/tikplay",
+        "techStack": ["Next.js", "React", "TypeScript", "yt-dlp"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",
