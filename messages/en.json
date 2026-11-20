@@ -223,6 +223,17 @@
     "noProjects": "No projects available yet.",
     "list": [
       {
+        "id": 10,
+        "title": "vn-law-check",
+        "year": "2026",
+        "description": "Open-source Legal Compliance Audit for Vietnamese Websites",
+        "details": "Built the open-source audit toolkit that lets AI coding agents check Vietnamese websites and apps against current Vietnamese law\nCovers personal data protection (91/2025), e-commerce, cybersecurity, advertising, AI transparency and more\nInstalls as a Claude Code plugin or skill for Cursor, Copilot, Windsurf, Cline and Codex, and returns a prioritized report",
+        "imageUrl": "/images/projects/vn-law-check.png",
+        "liveUrl": "https://mhfed.github.io/vn-law-check/",
+        "githubUrl": "https://github.com/mhfed/vn-law-check",
+        "techStack": ["Python", "Shell", "Markdown"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",

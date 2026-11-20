@@ -223,6 +223,17 @@
     "noProjects": "Chưa có dự án nào.",
     "list": [
       {
+        "id": 10,
+        "title": "vn-law-check",
+        "year": "2026",
+        "description": "Công cụ audit pháp lý mã nguồn mở cho website Việt Nam",
+        "details": "Xây dựng bộ công cụ audit mã nguồn mở để AI coding agent rà soát website và app Việt Nam theo luật hiện hành\nBao phủ bảo vệ dữ liệu cá nhân (91/2025), thương mại điện tử, an ninh mạng, quảng cáo, minh bạch AI và nhiều luật khác\nCài như plugin Claude Code hoặc skill cho Cursor, Copilot, Windsurf, Cline và Codex, trả về báo cáo xếp theo mức ưu tiên",
+        "imageUrl": "/images/projects/vn-law-check.png",
+        "liveUrl": "https://mhfed.github.io/vn-law-check/",
+        "githubUrl": "https://github.com/mhfed/vn-law-check",
+        "techStack": ["Python", "Shell", "Markdown"]
+      },
+      {
         "id": 9,
         "title": "Vô Lăng Lab",
         "year": "2026",
