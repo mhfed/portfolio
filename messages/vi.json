@@ -223,6 +223,17 @@
     "noProjects": "Chưa có dự án nào.",
     "list": [
       {
+        "id": 14,
+        "title": "Golden Land Vietnam",
+        "year": "2026",
+        "description": "Website bất động sản • Đất nền & dự án cao cấp ở Phổ Yên",
+        "details": "Xây dựng website bất động sản cho Golden Land, phân phối đất nền, căn hộ, biệt thự và shophouse ở Phổ Yên, Thái Nguyên\nDanh mục 6 dự án phân phối độc quyền, bộ lọc tìm kiếm theo loại hình, khu vực, giá và diện tích, kèm mục tin tức\nTrang chủ giới thiệu dự án nổi bật, đánh giá khách hàng và nội dung tư vấn pháp lý",
+        "imageUrl": "/images/projects/golden-land.png",
+        "liveUrl": "https://www.goldenlandvietnam.com/",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
         "id": 10,
         "title": "vn-law-check",
         "year": "2026",
