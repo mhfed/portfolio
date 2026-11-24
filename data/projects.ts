@@ -25,6 +25,7 @@ export interface ProjectCaseStudy {
 }
 
 const resultById: Record<number, string> = {
+  14: 'Real Estate Website • Projects & Search in Phổ Yên',
   13: 'Homestay & Trekking Site • Booking + PMS',
   11: 'Messaging Desktop App • 8 Platforms in One Window',
   12: 'TikTok Music Player • Link to Audio with Cache',
@@ -40,6 +41,7 @@ const resultById: Record<number, string> = {
 }
 
 const roleById: Record<number, string> = {
+  14: 'Frontend Developer / Full-site Build',
   13: 'Founder & Developer / Full-stack Build',
   11: 'Creator / Desktop App',
   12: 'Creator / Full-stack Web App',

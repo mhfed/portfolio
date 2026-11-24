@@ -223,6 +223,17 @@
     "noProjects": "目前尚無專案。",
     "list": [
       {
+        "id": 14,
+        "title": "Golden Land Vietnam",
+        "year": "2026",
+        "description": "房地產網站 • 普安土地與高級建案",
+        "details": "為 Golden Land 打造房地產網站，經銷普安、太原的土地、公寓、別墅與店面\n收錄 6 個獨家經銷建案，可依類型、區域、價格與面積篩選搜尋，並附新聞版塊\n首頁主打精選建案、客戶評價與法律諮詢內容",
+        "imageUrl": "/images/projects/golden-land.png",
+        "liveUrl": "https://www.goldenlandvietnam.com/",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
         "id": 10,
         "title": "vn-law-check",
         "year": "2026",

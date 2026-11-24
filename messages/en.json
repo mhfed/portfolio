@@ -223,6 +223,17 @@
     "noProjects": "No projects available yet.",
     "list": [
       {
+        "id": 14,
+        "title": "Golden Land Vietnam",
+        "year": "2026",
+        "description": "Real Estate Website • Land Plots & Premium Projects in Phổ Yên",
+        "details": "Built the real estate website for Golden Land, distributing land plots, apartments, villas and shophouses in Phổ Yên, Thái Nguyên\nProject catalogue with 6 exclusive developments, search filters by type, area, price and size, plus a news section\nHomepage hero with featured projects, customer reviews and legal advisory content",
+        "imageUrl": "/images/projects/golden-land.png",
+        "liveUrl": "https://www.goldenlandvietnam.com/",
+        "githubUrl": null,
+        "techStack": ["React", "TypeScript", "Vite"]
+      },
+      {
         "id": 10,
         "title": "vn-law-check",
         "year": "2026",
